@@ -2,4 +2,4 @@
 Notes for cs 260 -- Benson Rowley
 
 
-[my startup README.md ](notes.md)
+[my startup README.md ](README.md)
