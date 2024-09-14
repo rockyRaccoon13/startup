@@ -16,3 +16,9 @@ command to SSH into server remote
 my elastic IP: `52.73.160.154`   website: [http://52.73.160.154/](http://52.73.160.154/)
 
 
+#HTTPS
+my website [https://kbrbyucs260.click/](https://kbrbyucs260.click/)
+
+
+
+
