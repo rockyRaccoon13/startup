@@ -13,6 +13,6 @@ Notes for cs 260 -- Benson Rowley
 My AWS Server:
 command to SSH into server remote
 `ssh -i ~/keys/production.pem ubuntu@53.104.2.123`
-my elastic IP: `52.73.160.154`   website: [](http://52.73.160.154/)
+my elastic IP: `52.73.160.154`   website: [http://52.73.160.154/](http://52.73.160.154/)
 
 
