@@ -6,6 +6,7 @@ Notes for cs 260 -- Benson Rowley
 
 ## Class Resources
 [Class schedule](https://github.com/webprogramming260/.github/blob/main/profile/schedule/VenturaF2024.md)
+
 [Class simon iterations](https://github.com/webprogramming260/.github/blob/main/profile/essentials/simon/simon.md)
 
 
