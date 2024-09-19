@@ -20,12 +20,15 @@ Notes for cs 260 -- Benson Rowley
 
 My AWS Server:
 command to SSH into server remote
-`ssh -i ~/keys/production.pem ubuntu@53.104.2.123`
-my elastic IP: `52.73.160.154`   website: [http://52.73.160.154/](http://52.73.160.154/)
+`ssh -i [key path] ubuntu@52.73.160.154`
+or
+`ssh -i [key path] ubuntu@kbrbyucs260.click`
 
 
-#HTTPS
-my website [https://kbrbyucs260.click/](https://kbrbyucs260.click/)
+my elastic IP: `52.73.160.154`   
+website: ~[http://52.73.160.154/](http://52.73.160.154/)~ ip website no longer valid due to setting up https 
+
+  [https://kbrbyucs260.click/](https://kbrbyucs260.click/)
 
 
 ## Th Sep 19 Class
