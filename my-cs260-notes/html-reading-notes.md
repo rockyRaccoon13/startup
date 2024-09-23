@@ -109,9 +109,10 @@ OG way before JS to get user input -- "name=value"
 ### input element
 
 ##HTML media elements
-[https://learn.cs260.click/page/html/input/input_md]
+(https://learn.cs260.click/page/html/input/input_md)
 ### external media -- images, video, audio
 ### internal media-- drawings, animations-- SVG - scalable vector graphics, canvas
+(https://developer.mozilla.org/en-US/docs/Web/SVG)
 
 
 
