@@ -32,3 +32,6 @@ protocol sub domain. **domain name. top-level domain  (Root Domain, part you reg
 - `CNAME` maps domain names to other domain names
 -  The name server `(NS)` record contains the names of the authoritative name servers that authorize you to place DNS records in this DNS server
 -  The start of authority `(SOA)` record provides contact information about the owner of this domain name.
+
+
+
