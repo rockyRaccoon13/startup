@@ -1,4 +1,4 @@
-# Notes
+# Notes Overview
 Notes for cs 260 -- Benson Rowley
 
 
