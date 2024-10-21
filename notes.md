@@ -18,7 +18,9 @@ Notes for cs 260 -- Benson Rowley
 the collection of technologies used to create or deliver web application
 
 our Stack : 
+
 ![essentialsTechStack260](https://github.com/user-attachments/assets/f3f068a3-434b-4bc8-9769-e2f92394e32c)
+
  - React for the web framework
  - talking to Caddy as the web server hosted on AWS
  - running web services on Node.js
