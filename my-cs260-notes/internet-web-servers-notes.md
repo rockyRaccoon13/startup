@@ -61,3 +61,33 @@ function is loaded through a gateway that maps web request to the function
 * Reduces what web app. developer needs to think about down to single independent function
 
 
+# Domain Names
+look up IP through `dig`
+* some domain names are redundant - have multpile IPs that are valid (i.e. amazon.com)
+* must follow namming convention and listed in the domain name registry
+
+[subdomain]\***secondary.top**    ** bold is root domain **
+* ICAAN controls list of possible TLDs
+* any number of sub domains, each may resolve to different IP address
+
+`whois` looks up info about a domain name in domain name registry
+
+## DNS 
+once domain is in registry it can be listed with a domain name system (DNS) server and associated with an IP address. Each DNS server in world referenice a few DNS servers that are 'authorative name servers' for associating domain name with an IP address
+
+An `address (A)` record is a straight mapping from a domain name to IP address. A `canonical name (CNAME)` record maps one domain name to another domain name (CNAME for byu.com to same IP as byu.edu). 
+
+
+### Entering domain in browser, getting back IP
+browser checks cache to see if name already exists, broswer contacts a DNS server (also see if cached), DNS contacts a autorative name server. 
+
+if authority does not know name, unkown domain name error.
+Else, process resolves and browser makes HTTP connection to associated IP address
+
+caching may cause problems with updating info with domain name. `time to live (TTL)` setting allows you to set time until all caching layers honor and clear cache after requested period
+
+
+## Leasing  a domain name
+
+Either buy (every year have to register from domain registrar) or sublease (from private party)
+* buying gives you right to extended
