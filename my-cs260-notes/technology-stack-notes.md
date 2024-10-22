@@ -53,5 +53,6 @@ Configuration file: ~/Caddyfile
 
   
 HTML files: ~/public_html
-* directory of files that caddy serves up when requests are made to 
+* directory of files that caddy serves up when requests are made to root (this is set up in the CaddyFile config file)
+  
 
