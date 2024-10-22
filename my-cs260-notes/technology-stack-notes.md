@@ -24,7 +24,7 @@ Why Domain name:
 * referring to server by IP address is fine for development, but not for most users
 * HTTPS requires a Domain name
 
-#### DNS Records
+##### DNS Records
 http://www.google.com
 protocol sub domain. **domain name. top-level domain  (Root Domain, part you register)**
 
@@ -34,4 +34,24 @@ protocol sub domain. **domain name. top-level domain  (Root Domain, part you reg
 -  The start of authority `(SOA)` record provides contact information about the owner of this domain name.
 
 
+## Caddy -- our gateway aka reverse proxy
+* handles creation and rotation of web certificates -- allows us to support HTTPS easily
+* web service that listens for incoming HTTP requests
+* serves up requested static files
+* **or** routes to another service (multiple services reverse proxied by a single web service (Caddy))
+
+Caddy is preinstalled on our server through the class mirror. just need to configure root domain name
+
+ ![cadddy](https://github.com/user-attachments/assets/a8659f09-ac09-4e38-865c-5786707b208e)
+
+### caddy files
+
+note ports 80, 443 are HTTP and HTTPS for web requests
+
+Configuration file: ~/Caddyfile
+* definitions of  routing HTTP requests
+
+  
+HTML files: ~/public_html
+* directory of files that caddy serves up when requests are made to 
 
