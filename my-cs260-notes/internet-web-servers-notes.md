@@ -84,7 +84,7 @@ browser checks cache to see if name already exists, broswer contacts a DNS serve
 if authority does not know name, unkown domain name error.
 Else, process resolves and browser makes HTTP connection to associated IP address
 
-caching may cause problems with updating info with domain name. `time to live (TTL)` setting allows you to set time until all caching layers honor and clear cache after requested period
+caching may cause problems with updating info with domain name. `time to live (TTL)` setting allows you to set time until all caching layers honor and clear cache after requested period (for example delete entry from cache every 5 days -- so must pull up to date)
 
 
 ## Leasing  a domain name
