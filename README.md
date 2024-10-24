@@ -13,17 +13,28 @@ Would you like to share your enthusiasm for a particular movie with your friends
 
 **sign in page** 
 
+![signInPage](/descimages/signInPage.jpeg)
 
 
 **Reviews Page**
 
+![previewReviewsPage](/descimages/previewReviewsPage.jpeg)
+
+
 **User Profile**
+
+![userProfilePage](/descimages/userProfilePage.jpeg)
 
 
 **Individual Review Page**
 
+![singleReviewPage](/descimages/singleReviewPage.jpeg)
 
-**Publish Review** 
+
+**Publish/Edit Review** 
+
+![newEditReviewPage](/descimages/newEditReviewPage.jpeg)
+
 
 
 
