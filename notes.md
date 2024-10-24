@@ -5,7 +5,9 @@ Notes for cs 260 -- Benson Rowley
 [my startup README.md ](README.md)
 
 ## Class Resources
-[Class schedule](https://github.com/webprogramming260/.github/blob/main/profile/schedule/VenturaF2024.md)
+[my Notes Folder (in this repository)](/my-cs260-notes/)
+
+[Ventura Class schedule](https://github.com/webprogramming260/.github/blob/main/profile/schedule/VenturaF2024.md)
 
 [Class simon iterations](https://github.com/webprogramming260/.github/blob/main/profile/essentials/simon/simon.md)
 
