@@ -1,8 +1,5 @@
-# startup
+# startup - ***MovieLog***
 Startup application for BYU CS 260
-
-
-# MovieLog
 
 # Description Deliverable
 
