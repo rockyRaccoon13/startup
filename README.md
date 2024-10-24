@@ -1,7 +1,7 @@
 # startup - ***MovieLog***
 Startup application for BYU CS 260
 
-# Description Deliverable
+# Specification Deliverable
 
 ### Elevator Pitch
 Would you like to share your enthusiasm for a particular movie with your friends? Want to know what people are saying about the latest blockbuster? The MovieLog application allows you to read and publish reviews so you can hear opinions on the latest films. 
@@ -46,6 +46,13 @@ Would you like to share your enthusiasm for a particular movie with your friends
   
 
 ### Technologies
-* Authentication: User login page. Current users name is displayed in top right corner of each page.
-* Database data: Stores users - has profile and lists of published reviews as well as user entry lists for saved profiles, media.
-* WebSocket data: updates number of likes on reviews and avg ratings on media pages, updates recent reviews page
+
+- **HTML** - Uses correct HTML structure for application. 5 HTML pages (see images aobve). Hyperlinks.
+- **CSS** - Application styling that looks good on different screen sizes, uses good whitespace, color choice and contrast.
+- **React** - Provides login, reviews display, applying likes
+- **Service** - Backend service with endpoints for:
+  - login
+  - retrieving reviews/data/userProfile
+  - submitting reviews/data/userProfile
+- **DB/Login** - Store users, reviews, and review data. Register and login users. Credentials securely stored in database. Can't publish/like review unless authenticated.
+- **WebSocket** - updates number of likes on reviews and avg ratings on media pages, updates recent reviews page. Broadcasts changes to all users
