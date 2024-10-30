@@ -4,12 +4,49 @@
         <!-- Tell browsers not to scale the viewport automatically-->
         <meta name = "viewport" content ="width=device-width, inital-scale=1.0"/> 
         <title>MovieLog</title>
+        <link rel="icon" href="images/film-reel-icon.webp" />
     </head>
     <body>
         <!-- Use header, main, and footer elements to give semantic structure -->
     <header>
         <h1>MovieLog</h1>
+
+        <img alt="filmStrip" src = "images/filmStrip.jpg" width = "300"/>
+        <nav>
+            <menu>
+                <li><a href="index.html">Log In/Out</a></li>
+                <li><a href="browseReviews.html">Browse Revieww</a></li>
+                <li><a href="publishReview.html">Publish Review</a></li>
+                <li><a href="userProfile.html">User Profile</a></li>
+            </menu>
+        </nav>
+        <hr/>
     </header>
+
+    <main>
+        <h1>Welcome to MovieLog</h1>
+        <h2>Log In / Sign Up</h2>
+        <p>In order to publish reviews you must be a registered user</p>
+        <form method="get" action="browseReviews.html">
+            <div>
+                <span>@:</span>
+                <input type="text" placeholder="yourUsername">
+            </div>
+            <div>
+                <span>🔒:</span>
+                <input type="password" placeholder="password" />
+            </div>
+            <button type="submit">Login</button>
+            <button type="submit">Create</button>
+        </form>
+    </main>
+
+    <footer>
+        <hr/>
+        <span>Benson Rowley</span>
+        <br/>
+        <a href="https://github.com/rockyRaccoon13/startup">GitHub</a>
+    </footer>
 
     </body>
 </html>
