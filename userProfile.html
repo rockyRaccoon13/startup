@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <!-- Tell browsers not to scale the viewport automatically-->
+        <meta name = "viewport" content ="width=device-width, inital-scale=1.0"/> 
+        <title>Browse Reviews</title>
+        <link rel="icon" href="images/film-reel-icon.webp" />
+    </head>
+    <body>
+            <!-- Use header, main, and footer elements to give semantic structure -->
+        <header>
+            <h1>
+                <img alt="logo" src="images/film-reel-icon.webp" width="30"/>
+                <span>MovieLog</span>
+            </h1>
+            
+
+            <nav>
+                <menu>
+                    <li><a href="index.html">Log In/Out</a></li>
+                    <li><a href="browseReviews.html">Browse Reviews</a></li>
+                    <li><a href="editPublishReview.html">Publish Review</a></li>
+                    <li><a href="userProfile.html">curUser Profile</a></li>
+                </menu>
+            </nav>
+            <hr/>
+        </header>
+
+        <main>
+            
+            <h1><span>Username</span>'s Profile</h1>
+            <a href="editProfile.html">Edit Profile [if current user]</a>
+
+            <div>
+                <div>
+                <h2><span>FirstName</span> <span>LastName</span></h2>
+                <h3>Joined <span>5/3/2024</span></h3>
+                <h3><span>[Optional] Quote</span></h3>
+                </div>
+
+                <div>
+                <h4> <span>14 </span>🎞️ Reviews</h4>
+                <h4> <span>32 </span>👍 Likes</h4>
+                </div>  
+            </div>
+
+            <div>
+                <p>[Optional Bio] Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Labore enim amet aperiam recusandae saepe mollitia esse a 
+                    exercitationem rem est officia, fugiat quam quisquam pariatur
+                     culpa quos. Repellat, suscipit quod!Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                     Labore enim amet aperiam recusandae saepe mollitia esse a 
+                     exercitationem rem est officia, fugiat quam quisquam pariatur
+                      culpa quos. Repellat, suscipit quod!Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Labore enim amet aperiam recusandae saepe mollitia esse a 
+                      exercitationem rem est officia, fugiat quam quisquam pariatur
+                       culpa quos. Repellat, suscipit quod!
+                </p>
+            </div>
+
+            <hr/>
+            <h1><span>Username</span>'s Reviews</h1>
+            <div class="reviewsList">
+                <div class="reviewEntry"> 
+                
+                    <h2>
+                        <span>Movie Title</span>
+                        <span> | </span>
+                        <span><span>4</span>/10 ⭐</span>
+                    </h2>
+                    <h3>
+                        <a href="userProfile.html">publisherUserName</a>
+                        <span> | </span>
+                        <span>12/3/2022</span>
+                        <span> | </span>
+                        <span>12</span><button type="submit">👍</button>
+                    </h3>
+                    <h4><span>Review Title (optional)</span></h4>
+                    
+                    <p> (review optional) Preview of review...Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                        tempor incididunt ut labore et dolore magna aliqua.</p>
+
+                    <h4><a href="reviewPage.html">See Review</a></h4>
+                </div>
+                <hr />
+                <div class="reviewEntry">  
+                
+                    <h2>
+                        <span>Movie Title</span>
+                        <span> | </span>
+                        <span><span>4</span>/10 ⭐</span>
+                    </h2>
+                    <h3>
+                        <a href="userProfile.html">publisherUserName</a>
+                        <span> | </span>
+                        <span>12/3/2022</span>
+                        <span> | </span>
+                        <span>12</span><button type="submit">👍</button>
+                    </h3>
+                    <h4><span>Review Title</span></h4>
+                    <h4><a href="reviewPage.html">See Review</a></h4>
+                
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <hr/>
+            <span>Benson Rowley</span>
+            <br/>
+            <a href="https://github.com/rockyRaccoon13/startup">GitHub</a>
+        </footer>
+
+    </body>
+</html>

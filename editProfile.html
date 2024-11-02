@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <!-- Tell browsers not to scale the viewport automatically-->
+        <meta name = "viewport" content ="width=device-width, inital-scale=1.0"/> 
+        <title>Browse Reviews</title>
+        <link rel="icon" href="images/film-reel-icon.webp" />
+    </head>
+    <body>
+            <!-- Use header, main, and footer elements to give semantic structure -->
+        <header>
+            <h1>
+                <img alt="logo" src="images/film-reel-icon.webp" width="30"/>
+                <span>MovieLog</span>
+            </h1>
+            
+
+            <nav>
+                <menu>
+                    <li><a href="index.html">Log In/Out</a></li>
+                    <li><a href="browseReviews.html">Browse Reviews</a></li>
+                    <li><a href="editPublishReview.html">Publish Review</a></li>
+                    <li><a href="userProfile.html">curUser Profile</a></li>
+                </menu>
+            </nav>
+            <hr/>
+        </header>
+
+        <main>
+            
+            <h1>Edit <span>Username</span>'s Profile</h1>
+
+            <form method="get" action="userProfile.html">
+                <div>
+                    <h2>
+                        <label for="firstName">First Name: </label>
+                        <input type="text" id="firstName" name="varFirstName" placeholder="[curFirstName] (default blank\null for new user)"/>
+                        
+                        <label for="lastName">Last Name: </label>
+                        <input type="text" id="lastName" name="varLastName" placeholder="[curLastName] (default blank\null for new user)"/>
+                    </h2>
+                    <h3>Joined <span>5/3/2024</span></h3>
+                    <h3>
+                        <label for="userQuote">Quote: </label>
+                        <input type="text" id="userQuote" name="varUserQuote" placeholder="[userCurQuote] (default blank\null for new user)"/>
+                    </h3>
+                </div>
+                
+
+                <div>
+                    <label for="bioTextArea">Bio: </label>
+                    <textarea id="bioTextArea" name="varBioText">
+                        [Optional Bio] Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        Labore enim amet aperiam recusandae saepe mollitia esse a 
+                        exercitationem rem est officia, fugiat quam quisquam pariatur
+                        culpa quos. Repellat, suscipit quod!Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        Labore enim amet aperiam recusandae saepe mollitia esse a 
+                        exercitationem rem est officia, fugiat quam quisquam pariatur
+                        culpa quos. Repellat, suscipit quod!Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        Labore enim amet aperiam recusandae saepe mollitia esse a 
+                        exercitationem rem est officia, fugiat quam quisquam pariatur
+                        culpa quos. Repellat, suscipit quod! 
+                    </textarea>
+                </div>
+
+                <hr/>
+                <button type="submit">Save Changes</button>
+            </form>
+        </main>
+
+        <footer>
+            <hr/>
+            <span>Benson Rowley</span>
+            <br/>
+            <a href="https://github.com/rockyRaccoon13/startup">GitHub</a>
+        </footer>
+
+    </body>
+</html>

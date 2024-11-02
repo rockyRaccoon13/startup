@@ -8,49 +8,57 @@
     </head>
     <body>
         <!-- Use header, main, and footer elements to give semantic structure -->
-    <header>
-        <h1>
-            <img alt="logo" src="images/film-reel-icon.webp" width="30"/>
-            MovieLog
-        </h1>
-        <nav>
-            <menu>
-                <li><a href="index.html">Log In/Out</a></li>
-                <li><a href="browseReviews.html">Browse Review</a></li>
-                <li><a href="publishReview.html">Publish Review</a></li>
-                <li><a href="userProfile.html">User Profile</a></li>
-            </menu>
-        </nav>
-        <hr/>
-    </header>
+        <header>
+            <h1>
+                <img alt="logo" src="images/film-reel-icon.webp" width="30"/>
+                MovieLog
+            </h1>
+            <nav>
+                <menu>
+                    <li><a href="index.html">Log In/Out</a></li>
+                    <li><a href="browseReviews.html">Browse Reviews</a></li>
+                    <li><a href="editPublishReview.html">Publish Review</a></li>
+                    <li><a href="userProfile.html">curUser Profile</a></li>
+                </menu>
+            </nav>
+            <hr/>
+        </header>
 
-    <main>
-        
-        <h1>Welcome to MovieLog</h1>
-        
-        <img alt="filmStrip" src = "images/filmStrip.jpg" width = "300"/>
-        <h2>Log In / Sign Up</h2>
-        <p>In order to publish reviews you must be a registered user</p>
-        <form method="get" action="browseReviews.html">
-            <div>
-                <span>@:</span>
-                <input type="text" placeholder="yourUsername">
-            </div>
-            <div>
-                <span>🔒:</span>
-                <input type="password" placeholder="password" />
-            </div>
-            <button type="submit">Login</button>
-            <button type="submit">Create</button>
-        </form>
-    </main>
+        <main>
+            
+            <h1>Welcome to MovieLog</h1>
+            
+            <img alt="filmStrip" src = "images/filmStrip.jpg" width = "300"/>
 
-    <footer>
-        <hr/>
-        <span>Benson Rowley</span>
-        <br/>
-        <a href="https://github.com/rockyRaccoon13/startup">GitHub</a>
-    </footer>
+            <!--Insert quote from a web api-->
+            <p>"random movie quote" - some person [pull quote from API]</p>
+
+            <hr/>
+            <h2>Log In / Sign Up</h2>
+            <p>In order to publish reviews you must be a registered user</p>
+            <form method="get" action="browseReviews.html">
+                <div>
+                    <label for="userName">@:</label>
+                    <input type="text" id="userName" name="varUserName" placeholder="yourUsername" required maxlength="20"/>
+                </div>
+                <div>
+                    <label for="password">🔒:</span>
+                    <input type="password" label="password" name="varPassword" placeholder="password" required maxlength="20"/>
+                </div>
+                <div>
+                    password and username maxlength is 20 characters.
+                </div>
+                <button type="submit">Login</button>
+                <button type="submit">Create</button>
+            </form>
+        </main>
+
+        <footer>
+            <hr/>
+            <span>Benson Rowley</span>
+            <br/>
+            <a href="https://github.com/rockyRaccoon13/startup">GitHub</a>
+        </footer>
 
     </body>
 </html>

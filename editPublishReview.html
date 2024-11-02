@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <!-- Tell browsers not to scale the viewport automatically-->
+        <meta name = "viewport" content ="width=device-width, inital-scale=1.0"/> 
+        <title>MovieLog</title>
+        <link rel="icon" href="images/film-reel-icon.webp" />
+    </head>
+    <body>
+            <!-- Use header, main, and footer elements to give semantic structure -->
+        <header>
+            <h1>
+                <img alt="logo" src="images/film-reel-icon.webp" width="30"/>
+                MovieLog
+            </h1>
+            <nav>
+                <menu>
+                    <li><a href="index.html">Log In/Out</a></li>
+                    <li><a href="browseReviews.html">Browse Reviews</a></li>
+                    <li><a href="editPublishReview.html">Publish Review</a></li>
+                    <li><a href="userProfile.html">curUser Profile</a></li>
+                </menu>
+            </nav>
+            <hr/>
+        </header>
+        <main>
+                <form method="get" action="reviewPage.html">
+                    <div class="fullReview"> 
+                        
+                        <h2><label for="reviewTtile">Review Title: </label>
+                            <input type="text" id="movieTitle" name="varReviewTitle" placeholder="[curTitle] or [blank] for new entry" pattern="[Aa].*"/></h2>
+                        
+                        <h2>
+
+                            <label for="movieTitle">Movie Title: </label>
+                            <input type="text" id="movieTitle" name="varMovieTitle" placeholder="[curTitle] or [blank] for new entry" pattern="[Aa].*"/>
+                            <span> | </span>
+            
+                                <label for="stars">Rating: </label>
+                                <input type="range" name="varStars" id="stars" min="0" max="10" step=".5" value="0" />
+                                <output id="starsOutput" for="stars">0</output>
+                                <!-- Range requires some JavaScript in order to make it work. Ignore this for now. -->
+                                <script>
+                                    const range = document.querySelector('#stars');
+                                    const rangeOutput = document.querySelector('#starsOutput');
+                                    range.addEventListener('input', function() {
+                                    rangeOutput.textContent = range.value;
+                                    });
+                                </script>
+                                <span>
+                                /10 ⭐
+                                
+                            </span>
+                        </h2>
+                        <h3>
+                            <a href="userProfile.html">publisherUserName</a>
+                            <span> | </span>
+                            <label for="date">Date: </label>
+                            <input type="date" name="varDate" id="date" />
+                            <span> | </span>
+                            <span><span>12</span>👍</span>
+                        </h3>
+                        
+                        <label for="reviewTextArea">Review: </label>
+                        <textarea id="reviewTextArea" name="varReviewText">
+                            (review optional - blank) - no review just serves as entry in user "log") Complete review...Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                            tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                            tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                            tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                            tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                            tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                            tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                            tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                            tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                            tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                            tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                            tempor incididunt ut labore et dolore magna aliqua.
+                        </textarea>
+                    </div>
+                    
+                    <button type="submit">Save Changes</button>
+                    <hr/>
+                </form>
+                <form method="get" action ="userProfile.html">
+                    <button type="submit">Delete Review</button>
+                    <hr/>
+                </form>
+        </main>
+
+        <footer>
+            <hr/>
+            <span>Benson Rowley</span>
+            <br/>
+            <a href="https://github.com/rockyRaccoon13/startup">GitHub</a>
+        </footer>
+
+    </body>
+</html>
