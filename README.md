@@ -56,3 +56,18 @@ Would you like to share your enthusiasm for a particular movie with your friends
   - submitting reviews/data/userProfile
 - **DB/Login** - Store users, reviews, and review data. Register and login users. Credentials securely stored in database. Can't publish/like review unless authenticated.
 - **WebSocket** - updates number of likes on reviews and avg ratings on media pages, updates recent reviews page. Broadcasts changes to all users
+
+
+## HTML deliverable
+
+For this deliverable I built out the structure of my application using HTML.
+
+I did so over several days (in the span of Monday through Saturday of one week). I worked on my html several days but did not commit very often. For the next deliverable I will try to commit more often
+
+
+- [x] **HTML pages** - 6 HTML pages that represent the login page, browse page, review page, edit review page, profile page, edit profile page.
+- [x] **Links** - Menu at top of each page. Browse review links to user profile and review page. Review page and profile page link to respective edit pages (will be implemented only for current user).
+- [x] **Text** - User profiles and reviews are represented as text.
+- [x] **Images** - Included image on login screen as well as logo in header and head (displays on browser tab) of each page.
+- [x] **DB/Login** - Input boxes and 2 submit buttons for login/create account. The user profiles and reviews represent data pulled from the database.
+- [x] **WebSocket** - The list of reviews on browse Review will be updated in real time to include new reviews.
