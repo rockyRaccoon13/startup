@@ -70,6 +70,9 @@ footer a {
     color: #8975eb;
 }
 
+h2.login{
+    border-bottom: solid rgb(182, 182, 182) thin;
+}
 
 @media (max-height: 600px) {
     header {
