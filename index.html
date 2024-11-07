@@ -20,7 +20,7 @@
     <body class="bg-dark text-light">
         <!-- Use header, main, and footer elements to give semantic structure -->
         
-        <header class="container-fluid bg-mypurpleblue">
+        <header class="container-fluid">
             <nav class ="navbar fixed-top navbar-dark">
                 <a class="navbar-brand" href="#">
                     <img alt="logo" src="images/film-reel-icon.webp" height="30px"/>
@@ -51,29 +51,29 @@
             <img id = "film-reel-icon" alt="film Strip" src = "images/filmStrip.jpg" width = "300"/>
 
             <!--Insert quote from a web api-->
-            <p>"random movie quote" - some person [pull quote from API]</p>
+            <p class="quote">"random movie quote" - some person [pull quote from API]</p>
 
             
             <h2>Log In / Sign Up</h2>
-            <p>In order to publish reviews you must be a registered user</p>
+            <p class="text-muted">In order to publish reviews you must be a registered user</p>
             <form method="get" action="browseReviews.html">
-                <div >
-                    <label for="userName">@:</label>
-                    <input type="text" id="userName" name="varUserName" placeholder="yourUsername" required maxlength="20"/>
+                <div class="input-group mb-3">
+                    <label class="input-group-text" for="userName">@:</label>
+                    <input class="form-control" type="text" id="userName" name="varUserName" placeholder="Username" required maxlength="20"/>
                 </div>
-                <div>
-                    <label for="password">🔒:</span>
-                    <input type="password" label="password" name="varPassword" placeholder="password" required maxlength="20"/>
+                <div class="input-group mb-3">
+                    <label class="input-group-text" for="password">🔒:</label>
+                    <input class="form-control" type="password" id="password" name="varPassword" placeholder="password" required maxlength="20"/>
                 </div>
-                <div>
+                <p class="text-muted">
                     password and username maxlength is 20 characters.
-                </div>
-                <button type="submit">Login</button>
-                <button type="submit">Create</button>
+                </p>
+                <button type="submit" class="btn btn-primary">Login</button>
+                <button type="submit" class="btn btn-secondary">Create</button>
             </form>
         </main>
 
-        <footer class ="bg-mypurpleblue text-white-50">
+        <footer class ="text-white-50">
             <div class="container-fluid">
                 <span class="text-reset">Benson Rowley</span>
                 <a  class="text-reset" href="https://github.com/rockyRaccoon13/startup">GitHub</a>
