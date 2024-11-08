@@ -1,15 +1,11 @@
 :root {
-    --custom-greyblue: #2f4151;
     --custom-babyblue: #3a6e9d;
-    --custom-purple: #493a72;
-    --custom-darkpink: #794965;
-    --custom-grey: #647585;
-  }
+}
 
 body {
     display: flex;
     flex-direction: column;
-    min-width: 500px;
+    min-width: 300px;
 }
 
 header {
@@ -28,14 +24,6 @@ main {
 footer {
     flex: 0 30px;
     background-color: var(--custom-babyblue);
-}
-
-.quote {
-    color: var(--custom-babyblue)
-}
-
-h1{
-    color: var();
 }
 
 menu {
@@ -57,22 +45,6 @@ footer a {
 
 
 
-.bg-mydarkblue{
-    background-color: #002859;
-}
-
-.bg-myli{
-    background-color: #002859;
-}
-
-
-.text-mypurpleblue{
-    color: #8975eb;
-}
-
-h2.login{
-    border-bottom: solid rgb(182, 182, 182) thin;
-}
 
 @media (max-height: 600px) {
     header {
@@ -83,13 +55,6 @@ h2.login{
     }
     main {
       flex: 1 100vh;
-    }
-}
-
-
-@media (max-height: 500px) {
-    #film-reel-icon {
-        display: none;
     }
 }
 

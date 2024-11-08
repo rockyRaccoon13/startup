@@ -1,0 +1,19 @@
+h2.login{
+    border-bottom: solid rgb(182, 182, 182) thin;
+}
+
+.quote {
+    color: var(--custom-babyblue)
+}
+
+#film-reel-icon {
+    max-width: 75%;
+    height: auto;
+
+}
+
+@media (max-height: 500px) {
+    #film-reel-icon {
+        display: none;
+    }
+}
