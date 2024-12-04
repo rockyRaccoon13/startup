@@ -315,3 +315,14 @@ const objRegex = new RegExp('ab*', 'i');
 const literalRegex = /ab*/i;
 ```
 
+## JS rest and spread
+
+### Rest -- varaiadic functions
+sometimes you want function to take unkown number of param
+`rest` syntax -- think of a paramter that contains the rest of parameters passed to function. 
+function(param1, ...lastParam)  last param is turned into an array that contains the rest of params (only last param to know what paramaters to combine)
+
+### Spread
+    spread does opposite of rest. takes an object that is iterable (e.g. array or string) and expands it into a functions params
+
+functionCall(...[item1, item2])
