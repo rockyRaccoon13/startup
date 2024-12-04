@@ -50,7 +50,7 @@ When dealing with a number variable, JavaScript supports standard mathematical o
 
 JS is weekly typed language. Variable always has a type but type can change when assigned a new value
 
-```
+```js
 2 + '3';
 // OUTPUT: '23'
 2 * '3';
@@ -65,7 +65,7 @@ true + undefined;
 
 STRICT VS LOOSE EQUALITY (===, !==, vs ==, !=)
 USE STRICT -- it is more intuitive
-```
+```js
 1 === '1';
 // OUTPUT: false
 null === undefined;
@@ -75,7 +75,7 @@ null === undefined;
 ```
 
 Falsy and truthy evaluations (falsy are things like '' null, undetfiend, 0, -0, etc)
-```
+```js
 1 == '1';
 // OUTPUT: true
 null == undefined;
@@ -89,7 +89,9 @@ null == undefined;
 `if`, `else`, `if else`
 
 ternary operator (if else)
-```a === 1 ? console.log(1) : console.log('not 1');```
+```js 
+a === 1 ? console.log(1) : console.log('not 1');
+```
 
 
 ### Loops
@@ -100,7 +102,7 @@ ternary operator (if else)
 In JS are first class objects;
 They can be assigned name, passed parameter, returned as a result, and ref from an object or array just like any other variable
 
-```
+```js
 function name(params0+){
     body 
     zero or more return
@@ -114,7 +116,7 @@ function name(params0+){
 if paramnot provided, value of param id `undefined`
 Function can define default value in function declaration
 
-```
+```js
 function labeler(value, title = 'title') {
   console.log(`${title}=${value}`);
 }
@@ -133,7 +135,7 @@ labeler('fish', 'animal');
 In JS functions are commonly assigned to variable and then passed as param into another function
 
 assigning functions to variables, as well as using functions as parameters and return values.
-```
+```js
 // Function that takes a function as a parameter
 function doMath(operation, a, b) {
   return operation(a, b);
@@ -243,7 +245,7 @@ obj.prop or obj['prop']
 
 ### object-literals
 this syntax allows you to provide initial composition of object
-```
+```js
 const obj = {
   a: 3,
   b: 'fish',
@@ -251,7 +253,7 @@ const obj = {
 ```
 ### obj functions
 several intersting static functions. some common ones:
-```
+```js
 const obj = {
   a: 3,
   b: 'fish',
@@ -268,7 +270,7 @@ console.log(Object.values(obj));
 ### constructor
 any function that returns an object is considered a `constructor` and can be invoked with `new` operator:
 
-```
+```js
 function Person(name) {
   return {
     name: name,
@@ -310,7 +312,7 @@ you can make properties and functions private by prefixing them with `#`
 You can create a regular expression using the class constructor or a regular expression literal.
 
 second arg represents flag, /regex/flag (such as i - case insensitive)
-```
+```js
 const objRegex = new RegExp('ab*', 'i');
 const literalRegex = /ab*/i;
 ```
@@ -334,7 +336,7 @@ JS supports exception handling using `try catch` and `throw` syntax.
 
 exception triggered by coded `throw` keyword or runtime generation (ex: undef)
 
-```
+```js
 try {
   // normal execution code
   // if exception, code following throw is ignored, call stack unwound, catch block called
@@ -349,7 +351,7 @@ try {
 normal path in try blcok fallback in catch -- so that something is always returned
 
 Example:
-```
+```js
 function getScores() {
   try {
     const scores = scoringService.getScores();
@@ -360,4 +362,80 @@ function getScores() {
     return window.localStorage.getItem('scores');
   }
 }
+```
+## JS Destructuring
+DESTRUCTURING, NOT DESTRUCTING
+
+pulling individual items out of an existing one, aka removing structure.
+*for arrays or obj*
+
+example:
+```js
+const a = [1, 2, 4, 5];
+
+// destructure the first two items from a, into the new variables b and c
+const [b, c] = a;
+
+console.log(b, c);
+// OUTPUT: 1, 2
+
+
+const [b, c, ...others] = a;
+
+console.log(b, c, others);
+// OUTPUT: 1, 2, [4,5]
+```
+
+
+
+ou can also combine multiple items from the original object using rest syntax.
+
+```js
+const [b, c, ...others] = a;
+
+console.log(b, c, others);
+// OUTPUT: 1, 2, [4,5]
+```
+
+This works in a similar manner for objects, except with arrays, the assignment of the associated value was assumed by the positions in the two arrays. When destructuring objects, you explicitly specify the properties you want to pull from the source object.
+
+```js
+const o = { a: 1, b: 'animals', c: ['fish', 'cats'] };
+
+const { a, c } = o;
+
+console.log(a, c);
+// OUTPUT 1, ['fish', 'cats']
+```
+
+You can also map the names to new variables instead of just using the original property names.
+
+```js
+const o = { a: 1, b: 'animals', c: ['fish', 'cats'] };
+
+const { a: count, b: type } = o;
+
+console.log(count, type);
+// OUTPUT 1, animals
+```
+
+Default values may also be provided for missing ones.
+
+```js
+const { a, b = 22 } = {};
+const [c = 44] = [];
+
+console.log(a, b, c);
+// OUTPUT: undefined, 22, 44
+```
+
+Note that all of the above examples created new constant variables, but you can also use destructuring to reassign existing variables.
+
+```js
+let a = 22;
+
+[a] = [1, 2, 3];
+
+console.log(a);
+// OUTPUT: 1
 ```
