@@ -307,3 +307,11 @@ you can make properties and functions private by prefixing them with `#`
 
 ## JS regEx
 
+You can create a regular expression using the class constructor or a regular expression literal.
+
+second arg represents flag, /regex/flag (such as i - case insensitive)
+```
+const objRegex = new RegExp('ab*', 'i');
+const literalRegex = /ab*/i;
+```
+
