@@ -326,3 +326,38 @@ function(param1, ...lastParam)  last param is turned into an array that contains
     spread does opposite of rest. takes an object that is iterable (e.g. array or string) and expands it into a functions params
 
 functionCall(...[item1, item2])
+
+
+## JS Exceptions
+
+JS supports exception handling using `try catch` and `throw` syntax.
+
+exception triggered by coded `throw` keyword or runtime generation (ex: undef)
+
+```
+try {
+  // normal execution code
+  // if exception, code following throw is ignored, call stack unwound, catch block called
+} catch (err) {
+  // exception handling code
+} finally {
+  // always called code
+}
+```
+
+### Fallbacks
+normal path in try blcok fallback in catch -- so that something is always returned
+
+Example:
+```
+function getScores() {
+  try {
+    const scores = scoringService.getScores();
+    // store the scores so that we can use them later if the network is not available
+    window.localStorage.setItem('scores', scores);
+    return scores;
+  } catch {
+    return window.localStorage.getItem('scores');
+  }
+}
+```
