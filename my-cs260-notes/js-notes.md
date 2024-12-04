@@ -439,3 +439,57 @@ let a = 22;
 console.log(a);
 // OUTPUT: 1
 ```
+
+## Scope
+
+Scope - variables visible in current context of execution 
+
+1. Global - visible to all code
+2. Module - visible to all code running in a module
+3. Function - visible within a function
+4. Block - visible within a block of code delimited by {}
+
+### var
+`var` initaliy used to declare value are hosited to top of function scope
+
+from mdn
+  - In addition, identifiers declared with certain syntaxes, including let, const, class, or (in strict mode) function, can belong to an additional scope:
+   
+    - Block scope: The scope created with a pair of curly braces (a block).
+
+### This 
+`this` keyword represents a variable that points to an object that contains the context within the scope of the current executing line
+
+The this variable is automatically declared and can be referenced anywhere in JS program
+
+1. Global - When this is referenced outside a function or object it refers to the globalThis object. The globalThis object represents the context for runtime environment. For example, when running in a browser, globalThis refers to the browser's window object.
+2. Function - When this is referenced in a function it refers to the object that owns the function. That is either an object you defined or globalThis if the function is defined outside of an object. Note that when running in JavaScript strict mode, a global function's this variable is undefined instead of globalThis.
+3. Object - When this is referenced in an object it refers to the object.
+
+### closure
+
+a closure is defined as a function and its surrounding state
+
+whatever variables are accessible when a function is created are available inside that function
+
+holds true even if you pass function outside of the scope of its original creation
+
+arrow functions inherit the this pointer of thier creation context. 
+
+
+### JS modules
+
+alert.js
+```js
+export function alertDisplay(msg) {
+  alert(msg);
+}
+```
+You can import the module's exported function into another module using the import keyword.
+
+main.js
+```js
+import { alertDisplay } from './alert.js';
+
+alertDisplay('called from main.js');
+```
