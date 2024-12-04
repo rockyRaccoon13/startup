@@ -18,11 +18,12 @@
         crossorigin="anonymous"
         />
     </head>
-    <body class="bg-dark text-light">
+    <body class="bg-black text-light">
         <!-- Use header, main, and footer elements to give semantic structure -->
         
         <header class="container-fluid">
             <nav class ="navbar navbar-dark">
+              
                 <a class="navbar-brand" href="#">
                     <img alt="logo" src="images/film-reel-icon.webp" height="30px"/>
                     MovieLog
@@ -45,7 +46,7 @@
             </nav>
         </header>
 
-        <main class="container-fluid bg-black text-center">
+        <main class="container-fluid bg-black text-center mb-3">
             
             <h1>Welcome to MovieLog</h1>
             
@@ -60,14 +61,14 @@
             <form method="get" action="browseReviews.html">
                 <div class="input-group mb-3">
                     <label class="input-group-text" for="userName">@:</label>
-                    <input class="form-control" type="text" id="userName" name="varUserName" placeholder="Username" required maxlength="20"/>
+                    <input class="form-control" type="text" id="userName" name="varUserName" placeholder="Username" required minlength="2" maxlength="20"/>
                 </div>
                 <div class="input-group mb-3">
                     <label class="input-group-text" for="password">🔒:</label>
-                    <input class="form-control" type="password" id="password" name="varPassword" placeholder="password" required maxlength="20"/>
+                    <input class="form-control" type="password" id="password" name="varPassword" placeholder="password" required minlength="2" maxlength="20"/>
                 </div>
                 <p class="text-muted">
-                    password and username maxlength is 20 characters.
+                    username and password must be 2-20 characters long
                 </p>
                 <button type="submit" class="btn btn-primary">Login</button>
                 <button type="submit" class="btn btn-secondary">Create</button>
