@@ -230,5 +230,80 @@ console.log(obj, json, objFromJson);
 Note that in this example, JSON cannot represent the JavaScript `undefined` object and so it gets dropped when converting from JavaScript to JSON.
 
 
+## JS object and classes
+JS object represents collection of name value pairs referred to as properties. Objects have common object-oriented functionality such as constructors, `this` pointer, static properties and functions, inheritance
 
+Property NAME must be of tye String or Symbol: VALUE any type
+
+objects created with new operator . calls objects constructor
+const obj = new Object({a:3})
+once declared you can add properties by simply referencing name in assignment. Any type of variable can be assigned to property including sub-object, array, function
+
+obj.prop or obj['prop']
+
+### object-literals
+this syntax allows you to provide initial composition of object
+```
+const obj = {
+  a: 3,
+  b: 'fish',
+};
+```
+### obj functions
+several intersting static functions. some common ones:
+```
+const obj = {
+  a: 3,
+  b: 'fish',
+};
+
+console.log(Object.entries(obj));
+// OUTPUT: [['a', 3], ['b', 'fish']]
+console.log(Object.keys(obj));
+// OUTPUT: ['a', 'b']
+console.log(Object.values(obj));
+// OUTPUT: [3, 'fish']
+```
+
+### constructor
+any function that returns an object is considered a `constructor` and can be invoked with `new` operator:
+
+```
+function Person(name) {
+  return {
+    name: name,
+  };
+}
+
+const p = new Person('Eich');
+console.log(p);
+// OUTPUT: {name: 'Eich'}
+```
+
+function Person(name) {
+  return {
+    name: name,
+    log: function () {
+      console.log('My name is ' + this.name);
+    },
+  };
+}
+
+const p = new Person('Eich');
+p.log();
+// OUTPUT: My name is Eich
+
+
+### Classes
+classes look similar to declaraing na object but have explicit constructor and assumed function delcarations
+
+you can make properties and functions private by prefixing them with `#`
+
+#### Inheritance
+    classes can be extended by using `extends` keyword to define inheritanc
+    Parameters passed to parent class are deliverd using `super` function -- calls parent constructor
+    any functions defined on child of same name of parent function override parents implementation
+    A parent's function can be explicitly accessed using `super` keyword
+
+## JS regEx
 
