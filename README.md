@@ -50,10 +50,12 @@ Would you like to share your enthusiasm for a particular movie with your friends
 - **HTML** - Uses correct HTML structure for application. 5 HTML pages (see images aobve). Hyperlinks.
 - **CSS** - Application styling that looks good on different screen sizes, uses good whitespace, color choice and contrast.
 - **React** - Provides login, reviews display, applying likes
-- **Service** - Backend service with endpoints for:
-  - login
-  - retrieving reviews/data/userProfile
-  - submitting reviews/data/userProfile
+- **Service**
+  - Backend service with endpoints for:
+    - login
+    - retrieving reviews/data/userProfile
+    - submitting reviews/data/userProfile
+  - Third party service for getting random movie quote
 - **DB/Login** - Store users, reviews, and review data. Register and login users. Credentials securely stored in database. Can't publish/like review unless authenticated.
 - **WebSocket** - updates number of likes on reviews and avg ratings on media pages, updates recent reviews page. Broadcasts changes to all users
 
